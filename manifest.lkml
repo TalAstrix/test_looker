@@ -24,3 +24,17 @@ constant: GA360_TABLE_NAME {
   value: "ga_sessions_*"
   export: override_optional
 }
+
+
+application: Applicatio {
+  label: "An application"
+  file: "test.js"
+  entitlements: {
+    local_storage: yes
+    navigation: yes
+    new_window_external_urls: ["https://httpbin.org/get"]
+    core_api_methods: ["login"]
+    use_iframes: yes
+    oauth2_urls: ["https://httpbin.org/get"]
+  }
+}
