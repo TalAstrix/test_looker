@@ -36,5 +36,6 @@ application: Applicatio {
     core_api_methods: ["login"]
     use_iframes: yes
     oauth2_urls: ["https://httpbin.org/get"]
+    external_api_urls: ["https://httpbin.org"]
   }
 }
